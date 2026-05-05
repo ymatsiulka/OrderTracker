@@ -5,5 +5,13 @@
 ## Version: 0.1
 ## SavedVariables: OrderAddonDB
 
+database/db.lua
+
+extensions/CharacterExtensions.lua
+
 helpers/LinkHelper.lua
+
+scanners/CharacterScanner.lua
+scanners/CharacterProfessionsScanner.lua
+
 main.lua
