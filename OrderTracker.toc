@@ -1,7 +1,7 @@
 ## Interface: 11508, 11507, 20505, 30405, 38001, 40402, 50503, 50504, 120001, 120005, 120007
-## Title: My Order Addon
-## Notes: Simple crafting tracker
-## Author: You
+## Title: Global Chat Notification Order Tracker
+## Notes: Simple chat-global notification order tracker 
+## Author: ymatsiulka
 ## Version: 0.1
 ## SavedVariables: OrderAddonDB
 
@@ -12,8 +12,9 @@ extensions/CharacterExtensions.lua
 helpers/LinkHelper.lua
 
 scanners/CharacterScanner.lua
+scanners/RecipeScanner.lua
+scanners/CharacterBaseProfessionsScanner.lua
 scanners/CharacterProfessionsScanner.lua
-
 searchers/RecipeSearcher.lua
 
 main.lua

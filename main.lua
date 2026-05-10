@@ -3,7 +3,12 @@ local AddonName, OrderTracker = ...;
 
 local characterKey = OrderTracker.CharacterExtensions:GetCharacterKey()
 OrderTracker.CharacterScanner:ScanByKey(characterKey)
-OrderTracker.CharacterProfessionsScanner:ScanByKey(characterKey)
+OrderTracker.CharacterBaseProfessionsScanner:ScanByKey(characterKey)
+-- OrderTracker.CharacterProfessionsScanner:ScanByKey(characterKey)
+
+for i, profession in pairs(OrderTrackerDB.Characters[characterKey].professions) do
+    OrderTracker.RecipeScanner:Scan(profession)
+end
 
 -- Subscribe on chat messages with delay to ensure data is loaded
 C_Timer.After(1.0, function()

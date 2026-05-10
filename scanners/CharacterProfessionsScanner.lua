@@ -14,7 +14,7 @@ local function ScanRecipesModern(skillLineID, professionData)
         if recipes then
             for _, recipeID in ipairs(recipes) do
                 local recipeInfo = C_TradeSkillUI.GetRecipeInfo(recipeID)
-                print("Recipe", professionData.professionID, skillLineID, recipeInfo.categoryID)
+                print("Recipe", professionData.id, professionData.name)
                 local link = C_TradeSkillUI.GetRecipeItemLink(recipeID)
                 professionData.recipes[recipeID] = {
                     recipeID = recipeID,
